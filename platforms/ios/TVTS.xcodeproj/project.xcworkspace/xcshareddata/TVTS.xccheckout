@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>03CDFBC1-EFA9-419A-91E8-88AD69FB390B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TVTS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A122D6CEEB5E1C3132FBCAA3C4EBE220C752B97F</key>
+		<string>https://github.com/mstivali/Mobile.TVTS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/TVTS.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A122D6CEEB5E1C3132FBCAA3C4EBE220C752B97F</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mstivali/Mobile.TVTS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A122D6CEEB5E1C3132FBCAA3C4EBE220C752B97F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A122D6CEEB5E1C3132FBCAA3C4EBE220C752B97F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Mobile.TVTS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
