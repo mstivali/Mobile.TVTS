@@ -1,0 +1,30 @@
+ <h1 class="page-header" style="text-align:center;">Models</h1>
+  <div class="container col-md-10">
+    <div class="row">
+      <div class="col-md-2">
+        <!--Sidebar content-->
+
+        Search: <input ng-model="query">
+        Sort by:
+        <select ng-model="orderProp">
+          <option value="name">Alphabetical</option>
+          <option value="age">Newest</option>
+        </select>
+
+      </div>
+        <div class="col-md-10">
+          <!--Body content-->
+
+          <ul class="models">
+
+            <div class="col-md-4 tiled" ng-repeat="model in models | filter:query | orderBy:orderProp">
+              <div class="thumbnail">
+                   <a href="#/styles/{{model.id}}"><img ng-src="{{model.imageUrl}}"></a>
+                  <p style="text-align:center;">{{model.name}}</p>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+    </div>
+  </div>
