@@ -16,7 +16,7 @@
 
 	<ul class="specs">
 	  <li>
-	    <span>Engines</span>
+	    <span>Engine</span>
 	    <dl ng-repeat="engine in engines">
 	      <dt>Name<dt>
 	      <dd>{{engine.Name}}</dd>
@@ -41,17 +41,17 @@
 	    </dl>
 	  </li>
 	  <li>
-	    <span>Battery</span>
-	    <dl>
-	      <dt>Type</dt>
-	      <dd>{{phone.battery.type}}</dd>
-	      <dt>Talk Time</dt>
-	      <dd>{{phone.battery.talkTime}}</dd>
-	      <dt>Standby time (max)</dt>
-	      <dd>{{phone.battery.standbyTime}}</dd>
+	    <span>Transmission</span>
+	    <dl ng-repeat="transmission in transmissions">
+	      <dt>Name</dt>
+	      <dd>{{transmission.name}}</dd>
+	      <dt>Automatic Type</dt>
+	      <dd>{{transmission.automaticType}}</dd>
+	      <dt>Number Of Speeds</dt>
+	      <dd>{{transmission.numberOfSpeeds}}</dd>
 	    </dl>
 	  </li>
-	  <li>
+	  <!-- <li>
 	    <span>Storage and Memory</span>
 	    <dl>
 	      <dt>RAM</dt>
@@ -131,6 +131,6 @@
 	  <li>
 	    <span>Additional Features</span>
 	    <dd>{{phone.additionalFeatures}}</dd>
-	  </li>
+	  </li> -->
 	</ul>
 </div>
