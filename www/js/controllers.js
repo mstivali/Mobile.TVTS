@@ -31,6 +31,11 @@ tvtsControllers.controller('StyleDetailCtrl', ['$scope', '$http', '$routeParams'
 
     $http.get('phones/' + 'dell-streak-7' + '.json').success(function(data) {
       $scope.phone = data;
+      $scope.mainImageUrl = data.images[0];
     });
+
+    $scope.setImage = function(imageUrl) {
+      $scope.mainImageUrl = imageUrl;
+    }
   	
   }]);
