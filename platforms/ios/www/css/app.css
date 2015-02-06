@@ -21,3 +21,123 @@ body {
   height: 115px;
   padding-top: 15px;
 }
+
+/** Detail View **/
+img.phone {
+  float: left;
+  border: 1px solid black;
+  margin-right: 3em;
+  margin-bottom: 2em;
+  background-color: white;
+  padding: 2em;
+  height: 248px;
+  width: 372px;
+}
+
+ul.phone-thumbs {
+  margin: 0;
+  list-style: none;
+}
+
+ul.phone-thumbs li {
+  border: 1px solid black;
+  display: inline-block;
+  margin: 1em;
+  background-color: white;
+}
+
+ul.phone-thumbs img {
+  height: 120px;
+  width: 160;
+  padding: 1em;
+}
+
+ul.specs {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.specs > li{
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+}
+
+ul.specs > li > span{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+ul.specs dt {
+  font-weight: bold;
+}
+
+h1 {
+  border-bottom: 1px solid gray;
+}
+
+/*.example-animate-container {
+  background:white;
+  list-style:none;
+  margin:0;
+  padding:0 10px;
+}
+
+.animate-repeat {
+  line-height:40px;
+  list-style:none;
+  box-sizing:border-box;
+}
+
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+  opacity:0;
+  max-height:0;
+}
+
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move.ng-move-active,
+.animate-repeat.ng-enter.ng-enter-active {
+  opacity:1;
+  max-height:40px;
+}*/
+
+/*ng-show example Fade In Fade Out*/
+/*.sample-show-hide {
+  padding:10px;
+  border:1px solid black;
+  background:white;
+}
+
+.sample-show-hide {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+
+.sample-show-hide.ng-hide {
+  opacity:0;
+}*/
+
+/*Enter/Leave From The Left Animation*/
+/*.animate.ng-enter, .animate.ng-leave {
+  transition: 500ms ease-in all;
+  position: relative;
+  display: block;
+} 
+
+.animate.ng-enter.ng-enter-active, .animate.ng-leave {
+  left: 0;
+}
+.animate.ng-leave.ng-leave-active, .animate.ng-enter {
+  left: 500px;
+}*/

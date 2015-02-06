@@ -4,20 +4,40 @@
 
 	<h1>{{phone.name}}</h1>
 
-	<p>{{phone.description}}</p>
+<!-- 	<p>{{phone.description}}</p> -->
 
+<!-- 	<div class="col-md-18">
 	<ul class="phone-thumbs">
 	  <li ng-repeat="img in phone.images">
 	    <img ng-src="{{img}}" ng-click="setImage(img)">
 	  </li>
 	</ul>
+	</div> -->
 
 	<ul class="specs">
 	  <li>
-	    <span>Availability and Networks</span>
-	    <dl>
-	      <dt>Availability</dt>
-	      <dd ng-repeat="availability in phone.availability">{{availability}}</dd>
+	    <span>Engines</span>
+	    <dl ng-repeat="engine in engines">
+	      <dt>Name<dt>
+	      <dd>{{engine.Name}}</dd>
+	      <dt>Compression Ratio<dt>
+	      <dd>{{engine.CompressionRatio}}</dd>
+	      <dt>Cylinders</dt>
+	      <dd>{{engine.Cylinder}}</dd>
+	      <dt>Displacement</dt>
+	      <dd>{{engine.Displacement}}</dd>
+	      <dt>Configuration</dt>
+	      <dd>{{engine.Configuration}}</dd>
+	      <dt>Fuel Type</dt>
+	      <dd>{{engine.FuelType}}</dd>
+	      <dt>Horsepower</dt>
+	      <dd>{{engine.Horsepower}}</dd>
+	      <dt>Torque</dt>
+	      <dd>{{engine.Torque}}</dd>
+	      <dt>Total Valves</dt>
+	      <dd>{{engine.TotalValves}}</dd>
+	      <dt>Compressor Type</dt>
+	      <dd>{{engine.CompressorType}}</dd>	
 	    </dl>
 	  </li>
 	  <li>

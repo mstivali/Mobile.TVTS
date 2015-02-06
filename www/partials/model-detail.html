@@ -17,11 +17,9 @@
       <!--Body content-->
       <ul class="models">
         <li ng-repeat="style in styles | filter:query | orderBy:orderProp" class="thumbnail">
-        	<a href="#/styleDetail/{{style.Id}}">{{style.Name}}</a>
-        	<div class="col-md-2">
+          <p><a href="#/styleDetail/{{style.Id}}">{{style.Name}}</a></p>
         	<p>Model: {{style.Submodel.ModelName}}</p>
         	<p>Trim: {{style.Trim}}</p>
-        	</div>
         </li>
       </ul>
     </div>

@@ -1,27 +1,4 @@
 {
-    "Engines": [
-        {
-            "Id": "200710343",
-            "Name": "4.0L V6 24 Valve   Gas Regular Unleaded 1GR-FE",
-            "EquipmentType": "ENGINE",
-            "Availability": "STANDARD",
-            "CompressionRatio": 10.4,
-            "Cylinder": 6,
-            "Size": 4,
-            "Displacement": 3956,
-            "Configuration": "V",
-            "FuelType": "regular unleaded",
-            "Horsepower": 270,
-            "Torque": 278,
-            "TotalValves": 24,
-            "ManufacturerEngineCode": "1GR-FE",
-            "Type": "gas",
-            "Code": "6VNAG4.0",
-            "CompressorType": "NA"
-        }
-    ],
-    "EnginesCount": 1,
-
     "additionalFeatures": "Front Facing 1.3MP Camera", 
     "android": {
         "os": "Android 2.2", 
@@ -72,7 +49,6 @@
         "img/cars/4Runner-4.jpg",
         "img/cars/4Runner-6.jpg",
         "img/cars/4Runner-7.jpg"
-
     ], 
     "name": "4 Runner Limited 4dr SUV (4.0L 6cyl 5A)", 
     "sizeAndWeight": {

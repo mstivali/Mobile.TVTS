@@ -12,7 +12,6 @@ tvtsControllers.controller('ModelListCtrl', ['$scope', '$http',
 
     $scope.orderProp = 'age';
 
-
   }]);
 
 tvtsControllers.controller('ModelDetailCtrl', ['$scope', '$http', '$routeParams',
@@ -24,11 +23,19 @@ tvtsControllers.controller('ModelDetailCtrl', ['$scope', '$http', '$routeParams'
       	$scope.styles = data.Styles;
     });
 
-
   }]);
 
-tvtsControllers.controller('StyleDetailCtrl', ['$scope', '$routeParams',
-  function($scope, $routeParams) {
+tvtsControllers.controller('StyleDetailCtrl', ['$scope', '$http', '$routeParams',
+  function($scope, $http, $routeParams) {
   	$scope.styleId = $routeParams.styleId
+
+    $http.get('phones/' + 'dell-streak-7' + '.json').success(function(data) {
+      $scope.phone = data;
+      $scope.mainImageUrl = data.images[0];
+    });
+
+    $scope.setImage = function(imageUrl) {
+      $scope.mainImageUrl = imageUrl;
+    }
   	
   }]);
