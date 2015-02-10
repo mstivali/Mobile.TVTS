@@ -5,13 +5,13 @@
 var module = angular.module('testService', ['ngResource']);
 
 module.service('mathService', function(){
-     
+
     this.add = function(a, b) { return a + b };
 
     this.subtract = function(a, b) { return a - b };
-     
-    this.multiply = function(a, b) { return a * b };
-     
+
+    this.multiply = function(a, b) { return a * b }; 
+
     this.divide = function(a, b) { return a / b };
  
 });
@@ -30,3 +30,13 @@ module.factory('Vehicle', ['$resource',
       query: {method:'GET', params:{phoneId:'cars'}, isArray:true}
     });
  }]);
+
+//sample http request using $resource
+module.factory('Models', ['$resource',
+	function($resource){
+		return $resource('https://api.edmunds.com/api/vehicle/v2/toyota/models?state=new&year=2015&view=basic&fmt=json&api_key=27ggjjd3tthkmwh72tjgm52f&submodel=sedan', {},
+		{
+			query: { method:'GET'}
+		});
+	}]);
+

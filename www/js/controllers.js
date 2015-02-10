@@ -5,12 +5,17 @@
 var tvtsControllers = angular.module('tvtsControllers', []);
 
 tvtsControllers.controller('ModelListCtrl', 
-  ['$scope', '$http', 'Vehicle',
-  function($scope, $http, Vehicle) {
+  ['$scope', '$http', 'Vehicle', 'Models',
+  function($scope, $http, Vehicle, Models) {
 
     $http.get('cars/cars.json').success(function(data) {
       $scope.models = data;
     });
+
+    //Test get request using service
+    // Models.get(function(data) {
+    //   alert(JSON.stringify(data));
+    // });
 
     $scope.orderProp = 'age';
 
