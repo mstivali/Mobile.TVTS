@@ -24,9 +24,9 @@ module.service('CalculatorService', ['mathService', function(MathService){
 }]);
 
 
-module.factory('Phone', ['$resource',
+module.factory('Vehicle', ['$resource',
   function($resource){
-    return $resource('phones/:phoneId.json', {}, {
-      query: {method:'GET', params:{phoneId:'phones'}, isArray:true}
+    return $resource('cars/:styleId.json', {}, {
+      query: {method:'GET', params:{phoneId:'cars'}, isArray:true}
     });
  }]);
