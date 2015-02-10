@@ -5,7 +5,8 @@
 var tvtsApp = angular.module('phonecatApp', [
   'ngRoute',
   'tvtsControllers',
-  'tvtsFilters'
+  'tvtsFilters',
+  'testService'
 ]);
 
 tvtsApp.config(['$routeProvider',

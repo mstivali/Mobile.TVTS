@@ -14,9 +14,11 @@ tvtsControllers.controller('ModelListCtrl', ['$scope', '$http',
 
   }]);
 
-tvtsControllers.controller('ModelDetailCtrl', ['$scope', '$http', '$routeParams',
-  function($scope, $http, $routeParams) {
+tvtsControllers.controller('ModelDetailCtrl', ['$scope', '$http', '$routeParams', 'mathService',
+  function($scope, $http, $routeParams, mathService) {
     $scope.modelId = $routeParams.modelId;
+
+    alert(mathService.add(1,3));
 
     $http.get('cars/4RunnerStyles.json').success(function(data) {
       	// alert(JSON.stringify(data.Styles));
