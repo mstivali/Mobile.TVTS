@@ -2,7 +2,7 @@
 
 /* App Module */
 
-var tvtsApp = angular.module('phonecatApp', [
+var tvtsApp = angular.module('tvtsApp', [
   'ngRoute',
   'tvtsControllers',
   'tvtsFilters',

@@ -12,9 +12,10 @@ tvtsControllers.controller('ModelListCtrl',
       $scope.models = data;
     });
 
-    Models.get(function(data) {
-      alert(JSON.stringify(data));
-    });
+    //Test get request using service
+    // Models.get(function(data) {
+    //   alert(JSON.stringify(data));
+    // });
 
     $scope.orderProp = 'age';
 
