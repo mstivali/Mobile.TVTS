@@ -12,11 +12,6 @@ tvtsControllers.controller('ModelListCtrl',
       $scope.models = data;
     });
 
-    //Test get request using service
-    // Models.get(function(data) {
-    //   alert(JSON.stringify(data));
-    // });
-
     $scope.orderProp = 'age';
 
 }]);
@@ -26,9 +21,17 @@ tvtsControllers.controller('ModelDetailCtrl',
   function($scope, $http, $routeParams, Vehicle) {
     $scope.modelId = $routeParams.modelId;
 
-    Vehicle.get({styleId: '4RunnerStyles'}, function(vehicle) {
-        $scope.styles = vehicle.Styles;
-    });
+    // Vehicle.get({styleId: '4RunnerStyles'}, function(vehicle) {
+    //     $scope.styles = vehicle.Styles;
+    // });
+
+    $http({
+      url: 'http://tvts-api.azurewebsites.net/api/styles', 
+      method: "GET",
+      params: {modelId: $routeParams.modelId}
+    }).success(function(data){
+       $scope.styles = data.Styles;
+    })
 
 }]);
 
