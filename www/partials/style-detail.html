@@ -51,6 +51,24 @@
 	      <dd>{{transmission.numberOfSpeeds}}</dd>
 	    </dl>
 	  </li>
+	    <li>
+	    <span>Equipment</span>
+	    <dl ng-repeat="item in equipmentArray">
+	      <strong>{{item.name + ': '}}</strong>
+	      <div ng-repeat="attribute in item.attributes">
+		      <dt>
+		      	{{attribute.name}}
+		      </dt>
+		      <dd>
+		      	{{attribute.value}}
+		      </dd>
+	  	  </div>
+	      <!-- <dt>Automatic Type</dt>
+	      <dd>{{transmission.automaticType}}</dd>
+	      <dt>Number Of Speeds</dt>
+	      <dd>{{transmission.numberOfSpeeds}}</dd> -->
+	    </dl>
+	  </li>
 	  <!-- <li>
 	    <span>Storage and Memory</span>
 	    <dl>

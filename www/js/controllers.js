@@ -43,6 +43,18 @@ tvtsControllers.controller('StyleDetailCtrl',
     
     //stleId is temporarily hardcoded
     Vehicle.get({styleId: '4-Runner-Data'}, function(vehicle) {
+     // alert(JSON.stringify(vehicle.equipment[0].name));
+
+     var equipmentList = vehicle.equipment;
+     var namesArray = [];
+     for(var index in equipmentList)
+     {
+        // alert(equipmentList[index].name);
+        namesArray.push(equipmentList[index].name);
+     }
+
+     $scope.equipmentArray = equipmentList;
+
       $scope.phone = vehicle;
       $scope.engines = vehicle.Engines;
       $scope.transmissions = vehicle.transmissions;
